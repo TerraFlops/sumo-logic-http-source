@@ -2,13 +2,16 @@
  
 ### Module name
 
-Insert module description
+Provides a Sumologic HTTP source.
 
 #### Example usage
 
 ```hcl-terraform
-module "example" {
-  source = "git::https://github.com/TerraFlops/module-name?ref=v1.0"
-  ...
+module "http_source" {
+  source = "git::https://github.com/TerraFlops/sumo-logic-http-source?ref=v1.0"
+  
+  description = "Terraform - HTTP Source"
+  name = "TerraformDeployedHttpSource"
+  collector_id = "108160862"
 }
 ```
