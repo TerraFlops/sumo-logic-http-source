@@ -1,1 +1,3 @@
-# Insert output values here, if no outputs are defined delete this file
+output "http_source_endpoint_url" {
+  value = sumologic_http_source.http_source.url
+}
